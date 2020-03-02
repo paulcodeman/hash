@@ -51,6 +51,7 @@ dword crc32(dword data, len)
 		cc = DSDWORD[4*cc+T];
 		c >>= 8;
 		c ^= cc;
+		i++;
 	}
 	return c^-1;
 }
