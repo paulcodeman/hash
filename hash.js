@@ -4,7 +4,7 @@ function hash1(text)
   for (var i = 0; i < len; i++)
   {
     if (save > text.charCodeAt(i)) sum += i;
-    save = text.charCodeAt(i);
+    else save = text.charCodeAt(i);
     sum += save;
   }
   return (len << 20) | sum;
